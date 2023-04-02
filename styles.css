@@ -10,10 +10,15 @@ body {
     font-weight: bold;
     margin-bottom: 0.5em;
   }
-  
+
   h1 {
+    
     font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
   }
+  
   
   h2 {
     font-size: 2em;
@@ -263,3 +268,75 @@ nav ul li a:hover:after {
   transition: opacity 0.5s ease-in-out;
 }
  
+
+/* Hide all sections by default */
+section {
+  display: none;
+}
+
+/* Show only the current section */
+section.active {
+  display: block;
+}
+
+
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background-color: #0088cc;
+  color: white;
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #006699;
+}
+
+.phone {
+  background-image: url('phone-icon.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 70px;
+}
+
+.email {
+  background-image: url('email-icon.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 70px;
+}
+
+.github {
+  background-image: url('github-icon.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 70px;
+}
+
+.website {
+  background-image: url('website-icon.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 70px;
+}
