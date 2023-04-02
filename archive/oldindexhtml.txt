@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>  
+<head>
+	<title>Rohan Agrawal's Resume</title>
+  <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="loading">
+		<div class="loading-icon"></div>
+		
+	  </div>
+	<header>
+    <div class="container">
+      <img
+        src="profilepic.jpg"
+        alt="Rohan Agrawal's Profile Image"
+        class="profile-image"
+      />
+		<h1>Rohan Agrawal</h1>
+    <ul class="contact-info">
+      <li><a href="tel:5133770872">(513)-377-0872</a></li>
+      <li><a href="mailto:arohan19@gmail.com">arohan19@gmail.com</a></li>
+      <li><a href="https://github.com/rohan19a">github.com/rohan19a</a></li>
+      <li><a href="https://www.linkedin.com/in/arohan19/">LinkedIn</a></li>
+    </ul>
+  </div>
+		<nav>
+			<ul>
+        <li><a href="about">About Me</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#work">Work Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#organizations">Student Organizations</a></li>
+				<li><a href="#skills">Skills</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! I'm Rohan, a rising senior at the University of California, Berkeley. I'm a computer science major with a minor in data science. I'm passionate about software engineering, data science, and machine learning. I'm currently looking for a software engineering internship for Summer 2023. </p>
+    </section>
+		<section id="education">
+			<h2>Education</h2>
+			<div class="row">
+				<div class="column">
+					<h3>University of Berkeley</h3>
+					<p>B.A. Computer Science</p>
+					<p>GPA: 3.5 / 4.0</p>
+					<p>Relevant Coursework:</p>
+					<ul>
+						<li>Computer Science 61A: Data structures and algorithms in Python, Scheme. SQL</li>
+						<li>Computer Science 61B: Java. Data structures & Algorithms.</li>
+						<li>Math 54: Linear Algebra and Differential Equations</li>
+						<li>Computer Science 70: Discrete Mathematics and Probability Theory</li>
+						<li>Data 8: The Foundations of Data Science</li>
+						<li>Linux Administration DeCal - Networking, Server hosting, Kubernetes, Docker, DNS, Emulation</li>
+						<li>Cubstart - IOS App design, APIs, JSONs, Postman, React, Firebase</li>
+					</ul>
+				</div>
+				<div class="column">
+					<h3>Irvine Valley College</h3>
+					<p>Relevant Coursework:</p>
+					<ul>
+						<li>Computer Science 31 Database Management Programming: SQL programming; database management</li>
+						<li>Engineering 20 Object-oriented programming with MATLAB/Simulink</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="work">
+			<h2>Work Experience</h2>
+			<div class="job">
+				<h3>SeatEats: Berkeley, California - [Software Engineering Intern][September 2022-December 2022]</h3>
+				<p>IOS/Android/Backend developer</p>
+				<p>Fixed security vulnerabilities, implemented ORM database access, refactored frontend, implemented login through phone number.</p>
+			</div>
+			<div class="job">
+				<h3>Lateral Link: Los Angeles, California - [Software Engineering Intern][August 2020] – [January 2021]</h3>
+				<p>Oversaw the implementation of an organized and efficient SQL database and the transfer of company data into more efficient storage</p>
+			</div>
+		</section>
+	<section id="projects">
+		<h2>Projects</h2>
+		<ul>
+			<li>Split - Full-stack Swift IOS app. Allows users to split bulk items from warehouse stores with people who have similar grocery lists. Used SwiftUI, Swift, Firebase</li>
+			<li>Overtime - Full-stack app using Sequential Least Squares Programming optimization to allocate time spent on tasks. Uses vanilla Javascript, Flask, and Scipy</li>
+			<li>Berkeley Datathon 2021 - Used python, pandas, and regression to analyze the correlation between household income and accessibility of learning during COVID</li>
+			<li>Indian Town Endings - Analysis of patterns between endings of Indian towns and villages, using geopandas to plot the frequency and locations of which on maps. </li>
+			<li>Cars in California - Analysis of big data on zip codes and car registrations to discern any correlation between electric car registration and wealth of a county. Utilized sklearn for linear regressions,  </li>
+			<li>CS61A: Scheme - Created a compiler for Scheme (Python) </li>
+			<li>CS61B: Deques - Implemented functional doubly-linked lists and arrayLists (Java)</li>
+			<li>CS61B: BYOW - Built a 2D game in Java with multiple functionalities including loading, saving, world generation, and movement</li>
+		</ul>
+	</section>
+	
+	<section id="skills">
+		<h2>Skills</h2>
+		<ul>
+			<li>Languages: English; conversational proficiency in Hindi, Spanish</li>
+			<li>Technical Skills: Python, Java, SQL, Scheme, MatLab, C++, Git, Django, React, Angular</li
+    </ul>
+  </section>
+</main>
+<script src="anime.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
