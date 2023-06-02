@@ -1,27 +1,46 @@
-// Get all the navigation links
-const links = document.querySelectorAll('nav a');
+// Menu links
+let getAbout = document.getElementById("getAbout");
+let getResume = document.getElementById("getResume");
+let getContact = document.getElementById("getContact");
 
-// Get all the sections
-const sections = document.querySelectorAll('section');
+// Sections
+let about = document.getElementById("about");
+let resume = document.getElementById("resume");
+let contact = document.getElementById("contact");
 
-// Add click event listeners to the navigation links
-links.forEach(link => {
-  link.addEventListener('click', event => {
-    // Prevent the default link behavior
-    event.preventDefault();
-    
-    // Remove the active class from all links
-    links.forEach(link => link.classList.remove('active'));
-    
-    // Add the active class to the clicked link
-    link.classList.add('active');
-    
-    // Hide all sections
-    sections.forEach(section => section.classList.remove('active'));
-    
-    // Show the section that corresponds to the clicked link
-    const target = link.getAttribute('href');
-    const section = document.querySelector(target);
-    section.classList.add('active');
-  });
+function removeClass() {
+    // Links
+    getAbout.classList.remove('selected');
+    getResume.classList.remove('selected');
+    getContact.classList.remove('selected');
+    // Sections
+    about.classList.remove('view');
+    resume.classList.remove('view');
+    contact.classList.remove('view');
+}
+
+getAbout.addEventListener('click', function (e) {
+    if (window.innerWidth > 1040) {
+        e.preventDefault();
+        removeClass();
+        about.classList.add('view');
+        getAbout.classList.add('selected');
+    }
+
 });
+getResume.addEventListener('click', function (e) {
+    if (window.innerWidth > 1040) {
+        e.preventDefault();
+        removeClass();
+        resume.classList.add('view');
+        getResume.classList.add('selected');
+    }
+})
+getContact.addEventListener('click', function (e) {
+    if (window.innerWidth > 1040) {
+        e.preventDefault();
+        removeClass();
+        contact.classList.add('view');
+        getContact.classList.add('selected');
+    }
+})

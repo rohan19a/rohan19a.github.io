@@ -1,182 +1,212 @@
-<!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohan Agrawal's Resume</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+      <meta charset="UTF-8" />
+      <meta name ="viewport" content="width = device-width, initial-scale = 1" >
+      <title>Rohan Agrawal's Resume</title>
+      <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+          crossorigin="anonymous" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="shortcut icon" href="./favicon.ico">
   </head>
-  <body>
-    <div id="main-content">
-		<header>
-			  <h1>Rohan Agrawal</h1>
-			  <nav>
-				<ul>
-				  <li><a href="#work-experience">Work Experience</a></li>
-				  <li><a href="#education">Education</a></li>
-				  <li><a href="#projects">Projects</a></li>
-				  <li><a href="#contact">Contact</a></li>
-				</ul>
-			  </nav>
-			</div>
-		  </header>
-      <main>
-        <section id="education">
-			<div class="container">
-          <h2>Education</h2>
-          <ul>
-            <li><strong>University of Berkeley, California [2021-2025]</strong> - B.A. Computer Science - GPA: 3.5 / 4.0</li>
-            <li><em>Relevant Coursework:</em></li>
-            <li>Computer Science 61A: Data structures and algorithms in Python, Scheme. SQL</li>
-            <li>Computer Science 61B: Java. Data structures &amp; Algorithms.</li>
-            <li>Math 54: Linear Algebra and Differential Equations</li>
-            <li>Computer Science 70: Discrete Mathematics and Probability Theory</li>
-            <li>Data 8: The Foundations of Data Science</li>
-            <li>Linux Administration DeCal - Networking, Server hosting, Kubernetes, Docker</li>
-            <li>Cubstart - IOS App design, APIs, JSONs, Postman, APIs, Postman, React, Firebase</li>
-            <li><strong>Irvine Valley College, California [2021-2021]</strong></li>
-            <li><em>Relevant Coursework:</em></li>
-            <li>Computer Science 31 Database Management Programming: SQL programming; database management</li>
-            <li>Engineering 20 Object-oriented programming with MATLAB/Simulink</li>
-          </ul>
-			</div>
-        </section>
 
-		<section id="work-experience">
-			<div class="container">				
-				<h2>WORK EXPERIENCE</h2>
-			<ul class="resume-list">
-				<li>
-					<div class="resume-item">
-						<div class="resume-item-header">
-							<h4>SeatEats: Berkeley, California - [Software Engineering Intern][September 2022-December 2022]</h4>
-						</div>
-						<ul>
-							<li>Reduced user-reported defects by over 50% and resolved numerous security issues relating to SQL injection attacks, refactored backend to implement braintree payment processing in Javascript</li>
-							<li>Built one-time-password generation tool using Twilio for password recovery and initial signup functionality</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<div class="resume-item">
-						<div class="resume-item-header">
-							<h4>Lateral Link: Los Angeles, California - [Software Engineering Intern][August 2020] – [January 2021]</h4>
-						</div>
-						<ul>
-							<li>Oversaw the implementation of an organized and efficient SQL database and the transfer of company data into more efficient storage</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-		</section>
+<body> 
+    <div class="background gradient">
+      <!-- Delete if animation
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+      -->
+    </div>
+    <div class="page">
+        <header>
+            <nav>
+                <a href="#about" class="selected" id='getAbout'>
+                    <span class="fas fa-user"></span>
+                    <span class="link">About</span>
+                </a>
+                <a href="#resume" id='getResume'>
+                    <span class="fas fa-file"></span>
+                    <span class="link">Resume</span>
+                </a>
+                <a href="#contact" id='getContact'>
+                    <span class="fas fa-at"></span>
+                    <span class="link">Contact</span>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section id="presentation" class="profile">
+                <div class="profile-background"></div>
+                <div>
+                    <div class="profile-image">
+                        <img src="./pfp.png" alt="Rohan Agrawal">
+                    </div>
+                    <h1 class="profile-name" id="nombre">Rohan Agrawal</h1>
+                    <h2 class="profile-profession">Software Engineer</h2>
+                    <div class="profile-social" id="profile-social">
+                        <a href="www.linkedin.com/arohan19" class="fab fa-linkedin"></a>
+                        <a href="www.github.com/rohan19a" class="fab fa-github"></a>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <a href="./myCV.pdf" download>DOWNLOAD CV <i class="fas fa-download"></i></a>
+                    <a href="#contact">CONTACT ME <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+            <section id="about" class="about view">
+                <article class="about-aboutMe">
+                    <h3 class="title">About Me</h3>
+                    <div class="line-left">
+                        <p>I am Rohan Agrawal, a Software Engineer from California. I have experience working with modern frameworks on both mobile and web platforms, in both the frontend and backend.</p>
+                        <div>
+                            <div>
+                                <span>YEAR . . . . </span>JUNIOR
+                            </div>
+                            <div>
+                                <span>RESIDENCE . . . . </span>Berkeley, California
+                            </div>
+                            <div>
+                                <span>COLLEGE . . . . </span>University of California, Berkeley
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="about-services">
+                    <h3 class="title">My Services</h3>
+                    <div class="line-left">
+                        <article class="line-down">
+                            <div class="fas fa-code"></div>
+                            <h4>FRONTEND WEB DEVELOPMENT</h4>
+                            <p>React.js, Next.js, HTML/CSS/JS</p>
+                        </article>
+                        <article class="line-down">
+                            <div class="fas fa-music"></div>
+                            <h4>MOBILE DEVELOPMENT</h4>
+                            <p>React Native, Flutter, and Swift</p>
+                        </article>
+                        <article>
+                            <div class="fas fa-bullhorn"></div>
+                            <h4>BACKEND WEB DEVELOPMENT</h4>
+                            <p>Skills include Django, Express, GraphQL, MongoDB, Redis, and SQL</p>
+                        </article>
+                    </div>
+                </article>
+            </section>
 
-    <!-- Projects -->
-    <!-- Projects -->
-	<section id="projects">
-		<div class="container">
-			<h2>Projects</h2>
-		<div class="resume-section-content">
-		  <ul class="project-list">
-			<li>
-			  <h3 class="project-title">Split</h3>
-			  <p class="project-details">
-				Fully designed a UI, coded, and launched a full-stack Swift IOS app that allows users to split bulk items from warehouse stores with people who have similar grocery lists. Implemented Firebase user authentication and Firestore database management.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Overtime</h3>
-				<button onclick="location.href='twitter.com'; style="background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">
-					<img src="githubicon.png" alt="Example Image" width="20" height="30">
-				  </button></a>
-			  <p class="project-details">
-				Designed a full-stack website application that uses mathematical optimization to allocate time spent on tasks. Implemented frontend in Javascript, HTML, and CSS creating a user friendly and easy to use website page. Coded a backend and API using python and Flask, using Ajax to make HTTP requests to the backend database.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Q</h3>
-			  <p class="project-details">
-				Full stack website built using Django and python for the backend, HTML, CSS, and JavaScript for the backend, and PostGreSQL for the database.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Bajrang</h3>
-			  <p class="project-details">
-				Android social media mobile application built using android studio in Kotlin and XML.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Makruk</h3>
-			  <p class="project-details">
-				React Native implementation of classic Thai chess, built in Typescript.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Personal Website</h3>
-			  <p class="project-details">
-				Implemented a personal resume site using HTML, CSS, and Javascript.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Club Website</h3>
-			  <p class="project-details">
-				Created a functional template for a college club website with multiple pages using React.js.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">School Acceptance Visualizer</h3>
-			  <p class="project-details">
-				Interactive website that uses typescript, Next.js, and d3.js for the frontend to visualize acceptance trends across the University of California system.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Berkeley Datathon 2021</h3>
-			  <p class="project-details">
-				Used python, pandas, and regression to analyze the correlation between household income and accessibility of learning during COVID.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Indian Towns</h3>
-			  <p class="project-details">
-				Data science analysis of patterns between endings of Indian towns and villages, using geopandas to plot the frequency and locations of which on maps.
-			  </p>
-			</li>
-			<li>
-			  <h3 class="project-title">Cars in California</h3>
-			  <p class="project-details">
-				Analysis of big data on zip codes and car registrations to discern any correlation between electric car registration and wealth of a county. Utilized sklearn for linear regressions.
-			  </p>
-			</li>
-			<li>
-				</ul>
-			</div>
-		</section>
+            <section id="resume" class="resume">
+                <h3 class="title">Resume</h3>
+                <article class="resume-lines">
+                    <section class="resume-line line-left">
+                        <h4 class="line-down"> <i class="fas fa-briefcase"></i> Experience</h4>
+                        <article class="line-down">
+                            <div class="date active">APRIL 2023 - PRESENT</div>
+                            <h5 class="name">CTO</h5>
+                            <h6 class="company">SPLIT</h6>
+                            <p>Built features for IOS Flutter App for a fast growing startup with 1.2+ million dollars in attempted transactions. Programming done in Flutter Dart. Worked with Google Cloud, Firebase, and App Store Connect.</p>
+                        </article>
+                        <article class="line-down">
+                            <div class="date">OCTOBER 2022 - DECEMBER 2022</div>
+                            <h5 class="name">Software Engineering Intern</h5>
+                            <h6 class="company">SeatEats</h6>
+                            <p>Reduced user-reported defects by over 50% and resolved numerous security issues relating to SQL injection attacks, refactored backend to implement braintree payment processing in Javascript
+                                Built one-time-password generation tool using Twilio for password recovery and initial signup functionality</p>
+                        </article>
+                        <article>
+                            <div class="date">2021</div>
+                            <h5 class="name">Software Engineering Intern</h5>
+                            <h6 class="company">LateralLink</h6>
+                            <p>Oversaw the implementation of an organized and efficient SQL database and the transfer of company data into more efficient storage</p>
+                        </article>
+                    </section>
+                    <section class="resume-line line-left">
+                        <h4 class="line-down"> <i class="fas fa-projects"></i> Projects</h4>
+                        <article class="line-down">
+                            <div class="date">2023</div>
+                            <h5 class="name">Roadies</h5>
+                            <h6 class="company">React Native Application</h6>
+                            <p>Full stack react-native ridesharing application for ridesharing. Built functionality for login, signup, and matching</p>
+                        </article>
+                        <article class="line-down">
+                            <div class="date">2023</div>
+                            <h5 class="name">Kane</h5>
+                            <h6 class="company">Next.js</h6>
+                            <p>Next.js based web E-translation service. MongoDB utilized for authentication and storage. Express used for backend API</p>
+                        </article>
+                        <article>
+                            <div class="date">2023</div>
+                            <h5 class="name">SplitShoppe</h5>
+                            <h6 class="company">LONDON</h6>
+                            <p>Fully designed a UI, coded, and launched a full-stack Swift IOS app that allows users to split bulk items from warehouse stores with people who have similar grocery lists. Implemented Firebase user authentication and Firestore database management.</p>
+                        </article>
+                        <article>
+                            <div class="date">2022</div>
+                            <h5 class="name">Overtime</h5>
+                            <h6 class="company">HTML/CSS/JS</h6>
+                            <p>Designed a full-stack website application that uses mathematical optimization to allocate time spent on tasks. Implemented frontend in Javascript, HTML, and CSS creating a user friendly and easy to use website page. Coded a backend and API  using python and Flask, using Ajax to make HTTP requests to the backend database.</p>
+                        </article>
+                    </section>
+                </article>
 
-		<section id="contact">
-			<dib class="container">
-			<h2>Contact Me</h2>
-			<ul>
-			  <li><a href="tel:+15133770872">Call Me</a></li>
-			  <li><a href="mailto:arohan19@gmail.com">Email Me</a></li>
-			  <li><a href="https://github.com/rohan19a" target="_blank">GitHub</a></li>
-			  <li><a href="https://rohan19a.github.io/" target="_blank">My Website</a></li>
-			</ul>
-			</dib><div>
-		  </section>
-		  
-		  
-							<!-- Footer Section -->
-					<footer>
-					  <p>&copy; 2023 Rohan Agrawal</p>
-					</footer>
-			
-					<!-- Loading Screen -->
-			
-					<!-- Scripts -->
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-					<script src="main.js"></script>
-				  </body>
-				</html>
-					
-  
+
+                <article class="resume-skills">
+                    <h3 class="title">My Skills</h3>
+                    <div>
+                        <section class="line-left">
+                            <h4 class="line-down"><i class="fas fa-code"></i> CODING</h4>
+                            <div class="line-down">
+                                <div>WordPress</div>
+                                <div>
+                                    <div style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="line-down">
+                                <div>PHP/MYSQL</div>
+                                <div>
+                                    <div style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="line-down">
+                                <div>Angular/JavaScript</div>
+                                <div>
+                                    <div style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>HTML/CSS</div>
+                                <div>
+                                    <div style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </section>
+            <section id="contact" class="contact">
+              <h3 class="title">Get in Touch</h3>
+              <div class="contact-information line-left">
+                <div>
+                  <span>EMAIL . . . . </span> arohan19@gmail.com
+                </div>
+              </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
