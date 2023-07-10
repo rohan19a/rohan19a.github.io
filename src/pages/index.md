@@ -2,7 +2,7 @@
 title: Rohan Agrawal - Resume
 description: Resume about Rohan Agrawal, Computer Science graduate.
 layout: ../layouts/Minimalist.astro
-pdfLink: ../Rohan-Agrawal-Resume.pdf
+pdfLink: https://docs.google.com/document/d/1qomjs-PXWcrV4VJpzrE5yXvRKJQKctVr8ubzB_wQj_U/edit?usp=sharing
 ---
 
 # Rohan Agrawal 
